@@ -64,7 +64,7 @@ const SubFooter = () => {
                   color: path == PATH.CONTACT || path == PATH.ABOUT ? "#fff !important" : style.TEXT_COLOR_SUB_FOOTER,
                }}
             >
-               {t("Hai Sam Trading and Import-Export Co., Ltd.")}
+               {t("Xin chào! Mình là Long.")}
             </MUITypography>
 
             <MUITypography
@@ -78,7 +78,7 @@ const SubFooter = () => {
                fontWeight={500}
                marginBottom={2.8}
             >
-               {t("Address")}: {t("180 Tran Nhan Tong - Hai Xuan- Mong Cai- Quang Ninh")}
+               {t("Địa chỉ")}: {t("Xã Phong Phú, Huyện Bình Chánh, TP. HCM")}
             </MUITypography>
 
             <MUITypography
@@ -92,7 +92,7 @@ const SubFooter = () => {
                fontWeight={500}
                marginBottom={2.8}
             >
-               Email: Haisamlogistics@gmail.com
+               Email: lephilong471@gmail.com
             </MUITypography>
 
             <MUITypography
@@ -105,7 +105,7 @@ const SubFooter = () => {
                fontFamily={FONT_FAMILY.MONTSERRAT}
                fontWeight={500}
             >
-               {t("Phone")}: 0777020707
+               {t("Phone")}: 0969 099 045
             </MUITypography>
          </MUIBox>
       </MUIBox>

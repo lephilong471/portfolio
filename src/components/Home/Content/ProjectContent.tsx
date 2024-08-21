@@ -50,7 +50,7 @@ const ProjectContent = () => {
                   className="word-holder"
                   sx={{ fontSize: { xs: "40px", sm: "66px", lg: "114px" } }}
                >
-                  <SplittingText>{t("Logistics Triumphs")}</SplittingText>
+                  <SplittingText>{t("Đôi nét về mình")}</SplittingText>
                </MUITypography>
                <Divider />
                <MUIBox
@@ -104,7 +104,7 @@ const ProjectContent = () => {
                            },
                         }}
                      >
-                        {t("Last project")}
+                        {t("Giới thiệu")}
                      </MUITypography>
                   </Link>
                   <ArrowOutwardRoundedIcon className="icon-project" />

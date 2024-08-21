@@ -26,7 +26,7 @@ const Footer = () => {
                py: "22px",
             }}
          >
-            {t("©2024 HAI SAM - QUANG NINH")}
+            {t("©2024 PORTFOLIO WEBSITE")}
          </MUITypography>
       </MUIBox>
    );

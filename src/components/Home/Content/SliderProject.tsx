@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay, EffectFade, Parallax } from "swiper/modules";
 import { MUIBox, MUITypography } from "@/components/MUI";
 import styled from "styled-components";
-import CarouselManagerAI from "@/public/images/slider/manager-engineer-checking-ai.jpg";
-import CarouselManager from "@/public/images/slider/manager-engineer-checking.jpg";
-import CarouselShipViewTop from "@/public/images/slider/aerial-view-top.jpg";
-import CarouselTruck from "@/public/images/slider/truck.jpg";
-import CarouselFuturistic from "@/public/images/slider/futuristic-truck.jpg";
-import CarouselGlobal from "@/public/images/slider/global-logistic-airplane.jpg";
+import CatSmile from "@/public/images/about/cat-smile.jpg";
+import CatSleep from "@/public/images/about/cat-sleep.jpg";
+// import CarouselShipViewTop from "@/public/images/slider/aerial-view-top.jpg";
+// import CarouselTruck from "@/public/images/slider/truck.jpg";
+// import CarouselFuturistic from "@/public/images/slider/futuristic-truck.jpg";
+// import CarouselGlobal from "@/public/images/slider/global-logistic-airplane.jpg";
 import ImageSvg from "react-inlinesvg";
 // import Image from "next/image";
 import { FONT_FAMILY, style } from "@/config";
@@ -152,33 +152,13 @@ const styleTransition = {
 
 const dataCarousel = [
    {
-      image: CarouselManager,
-      title: "Global Reach",
+      image: CatSmile,
+      title: "Về thông tin cơ bản",
       path: "",
    },
    {
-      image: CarouselManagerAI,
-      title: "Supply Chain",
-      path: "",
-   },
-   {
-      image: CarouselShipViewTop,
-      title: "Transportation Efficiency",
-      path: "",
-   },
-   {
-      image: CarouselTruck,
-      title: "Inventory Control",
-      path: "",
-   },
-   {
-      image: CarouselGlobal,
-      title: "Movon Logistics",
-      path: "",
-   },
-   {
-      image: CarouselFuturistic,
-      title: "Cross-Border Trade",
+      image: CatSleep,
+      title: "Kiến thức chuyên môn",
       path: "",
    },
 ];
@@ -367,7 +347,7 @@ const SliderProject = () => {
                                  // },
                               }}
                            >
-                              <Link href={PATH.SERVICE} style={{ color: "inherit" }}>
+                              <Link href={PATH.ABOUT} style={{ color: "inherit" }}>
                                  <MUITypography
                                     fontSize={15}
                                     fontWeight={400}
@@ -382,7 +362,7 @@ const SliderProject = () => {
                                        color: "inherit",
                                     }}
                                  >
-                                    {t('Services')}
+                                    {t('Giới thiệu')}
                                     <ImageSvg
                                        src="/images/icons/ArrowForwardRoundedIcon.svg"
                                        style={{ width: "20px", color: "inherit" }}

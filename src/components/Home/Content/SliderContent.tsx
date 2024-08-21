@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, Parallax, EffectFade } from "swiper/modules";
 import { Box, styled } from "@mui/material";
 import { MUIBox, MUITypography } from "@/components/MUI";
-import SliderPlane from "@/public/images/slider/transportation-logistics-container-cargo-ship-.jpg";
-import SliderShipPlane from "@/public/images/slider/aerial-view-top.jpg";
-import SliderTruck from "@/public/images/slider/truck.jpg";
-import SliderTrain from "@/public/images/slider/containers-train-railway-station.jpg";
+
 import MaskOverlay from "@/public/images/slider/side-round-mask.svg";
+
+import Stage1 from "@/public/images/about/stage-1.jpg"
+import Friend from "@/public/images/about/friends.jpg"
+
 import AOS from "aos";
 import Link from "next/link";
 import { FONT_FAMILY } from "@/config";
@@ -16,33 +17,34 @@ import { useTranslation } from "react-i18next";
 
 const DataSlider = [
    {
-      image: SliderPlane,
-      heading: "Logistics",
-      title: "Excellence: Beyond Boundaries",
-      subtitle: "Driving Commerce",
-      des: "Optimized logistics can reduce transportation, storage, and inventory costs, leading to higher profitability.",
+      image: Friend,
+      heading: "Xin chào",
+      title: "Đây là bạn bè của mình",
+      subtitle: "Mình thuộc kiểu người hướng ngoại",
+      des: "Nên có thể kết bạn và chơi với rất nhiều người bạn.",
    },
    {
-      image: SliderShipPlane,
-      heading: "Efficiency",
-      title: "in Motion, Logistics in Action",
-      subtitle: "Delivering Success",
-      des: "Timely deliveries, accurate order fulfillment, and proper handling of goods contribute to customer satisfaction.",
+      image: Stage1,
+      heading: "Xin chào",
+      title: "Mình tên là Long",
+      subtitle: "Rất vui vì đã ghé thăm trang Web của mình",
+      des: "Dưới đây là hành trình kết bạn bốn phương của mình",
    },
    {
-      image: SliderTruck,
-      heading: "Mastering",
-      title: "Movement, Defining Logistics",
-      subtitle: "Balancing Act",
-      des: "Well-managed logistics can provide a competitive edge by offering faster delivery, better service, and lower costs.",
+      image: Friend,
+      heading: "Sân khấu",
+      title: "Hồi còn học cấp 3",
+      subtitle: "Đây là hình ảnh mình đứng trên sân khấu",
+      des: "Kỉ niệm ấy thật đáng nhớ vì mình có thể kết thêm được nhiều người bạn",
    },
    {
-      image: SliderTrain,
-      heading: "Efficient",
-      title: "Logistics",
-      subtitle: "Logistics Excellence",
-      des: "Robust logistics systems can help businesses better respond to disruptions and changes in the global marketplace.",
+      image: Stage1,
+      heading: "Hồi hộp",
+      title: "Đây là hình ảnh mình lúc diễn",
+      subtitle: "Tâm trạng khá hồi hộp nhưng mà vui",
+      des: "Thật khó tả",
    },
+ 
 ];
 
 const SliderStyled = styled(Box)`

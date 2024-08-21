@@ -5,9 +5,9 @@ import { MUIBox } from "@/components/MUI";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 
-import TruckImage from "@/public/images/service/futuristic-truck.jpg";
-import PlanImage from "@/public/images/service/carousel-transportation-logistics.jpg";
-import ContainerImage from "@/public/images/service/view-port-containers-sunset.jpg";
+import Pic3 from "@/public/images/about/pic3.jpg";
+import Pic2 from "@/public/images/about/pic2.jpg";
+import Pic1 from "@/public/images/about/pic1.jpg";
 import styled from "styled-components";
 import WindowWidthWrapper from "@/config/hooks/useWindowWidthWrapper";
 import { BREAK_POINT } from "@/config";
@@ -51,21 +51,21 @@ const SliderZoomIn = () => {
                <SwiperSlide>
                   <MUIBox
                      sx={{
-                        backgroundImage: `url(${ContainerImage.src})`,
+                        backgroundImage: `url(${Pic1.src})`,
                      }}
                   />
                </SwiperSlide>
                <SwiperSlide>
                   <MUIBox
                      sx={{
-                        backgroundImage: `url(${PlanImage.src})`,
+                        backgroundImage: `url(${Pic2.src})`,
                      }}
                   />
                </SwiperSlide>
                <SwiperSlide>
                   <MUIBox
                      sx={{
-                        backgroundImage: `url(${TruckImage.src})`,
+                        backgroundImage: `url(${Pic3.src})`,
                      }}
                   />
                </SwiperSlide>

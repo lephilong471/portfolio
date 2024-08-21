@@ -1,7 +1,7 @@
 export const PATH = {
    HOME: "/",
    ABOUT: "/about",
-   SERVICE: "/service",
+   SERVICE: "/favorites",
    NEWS: "/news",
    NEW_DETAIL: "/news/[id]",
    CONTACT: "/contact",
