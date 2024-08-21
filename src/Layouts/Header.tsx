@@ -16,7 +16,7 @@ import { Input, Form, Button } from "antd";
 import { useTranslation } from "react-i18next";
 
 import dynamic from "next/dynamic";
-import LanguageSwitcher from "@/components/presentation/LanguageSwitcher";
+// import LanguageSwitcher from "@/components/presentation/LanguageSwitcher";
 
 const WindowWidthWrapper = dynamic(() => import("@/config/hooks/useWindowWidthWrapper"), { ssr: false });
 
@@ -183,7 +183,7 @@ const Header = () => {
                            }}
                         // href={}
                         >
-                           HAISAM.
+                           PORTFOLIO.
                         </MUILink>
                      </MUITypography>
                      <MUIBox
@@ -339,9 +339,9 @@ const Header = () => {
                               )}
                            </AnimateStyled>
                         </MUIBox>
-                        <MUIBox sx={{ display: "flex", alignItems: "center" }}>
+                        {/* <MUIBox sx={{ display: "flex", alignItems: "center" }}>
                            <LanguageSwitcher />
-                        </MUIBox>
+                        </MUIBox> */}
                      </MUIBox>
                      <MUIBox sx={{ py: 4.2, display: { xs: expand ? "block" : "none", md: "none" } }}>
                         {headerData.map((item, index) => (
@@ -366,7 +366,7 @@ const Header = () => {
                               {index !== headerData.length - 1 && <Divider />}
                            </>
                         ))}
-                        <LanguageSwitcher />
+                        {/* <LanguageSwitcher /> */}
 
                         <MUIBox
                            sx={{

@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { MUIBox } from "@/components/MUI";
 import styled from "styled-components";
-import CarouselContainerShipPlane from "@/public/images/slider/carousel-container-cargo-ship-cargo-plane-3d.jpg";
-import CarouselContainerShip from "@/public/images/slider/carousel-container-cargo-ship-cargo-plane.jpg";
-import CarouselShipFly from "@/public/images/slider/carousel-container-ship-flying-plan-car-van-truck.jpg";
-import CarouselTrainTrack from "@/public/images/slider/carousel-train-track-with-blue-container-top.jpg";
-import CarouselTransportation from "@/public/images/slider/carousel-transportation-logistics.jpg";
+import Background1 from "@/public/images/about/slider/bg-1.jpg";
+import Background2 from "@/public/images/about/slider/bg-2.jpg";
+import Background3 from "@/public/images/about/slider/bg-3.jpg";
+import Background4 from "@/public/images/about/slider/bg-4.jpg";
+import Background5 from "@/public/images/about/slider/bg-5.jpg";
+
 import ImageSvg from "react-inlinesvg";
 import AOS from "aos";
 
@@ -56,19 +57,22 @@ const SliderCarouselStyled = styled("div")`
 
 const dataCarousel = [
    {
-      image: CarouselContainerShipPlane,
+      image: Background1,
    },
    {
-      image: CarouselContainerShip,
+      image: Background2,
    },
    {
-      image: CarouselTrainTrack,
+      image: Background4,
    },
    {
-      image: CarouselShipFly,
+      image: Background3,
    },
    {
-      image: CarouselTransportation,
+      image: Background4,
+   },
+   {
+      image: Background5,
    },
 ];
 

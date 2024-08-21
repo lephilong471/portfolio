@@ -6,7 +6,7 @@ import { MUIBox, MUIGrid, MUITypography } from "../../components/MUI";
 import styled from "styled-components";
 import { style, FONT_FAMILY } from "@/config";
 
-import ShipFlying from "@/public/images/basic/earth-surrounded-by-cardboard-boxes-cargo-container-ship-flying-plan-car-van-truck.jpg";
+import Trees from "@/public/images/about/trees.jpg";
 
 import dynamic from "next/dynamic";
 const SplittingText = dynamic(() => import("@/components/presentation/SplittingText"), { ssr: false });
@@ -14,14 +14,14 @@ const SplittingText = dynamic(() => import("@/components/presentation/SplittingT
 import AboutSlider from "@/components/Home/Content/AboutSlider";
 import { Divider } from "@mui/material";
 import SubFooter from "@/Layouts/SubFooter";
-import StaffContent from "@/components/Home/Content/StaffContent";
+// import StaffContent from "@/components/Home/Content/StaffContent";
 
-import CargoShip from "@/public/images/slider/aerial-view-top-view-cargo-plane-flying-ship-port-export-import-logistics-international-goods-ai-generation-1000x1000.jpg";
-import Truck from "@/public/images/slider/self-driving-futuristic-freight-truck-deliver-goods-warehouse-city-highway-1000x1000.jpg";
+import DairyCow from "@/public/images/about/dairy-cow.jpg";
+import Frontend from "@/public/images/about/frontend.jpg";
 import { useTranslation } from "react-i18next";
 import useIntersectionObserver from "@/config/hooks/useIntersectionObserver";
-import ContactContent from "@/components/Home/Content/ContactContent";
-import LoadedContainer from "@/public/images/basic/loaded-container-cargo-ship-is-seen-front-as-it-speeds-ocean-generative-ai-1300x1097.jpg";
+// import ContactContent from "@/components/Home/Content/ContactContent";
+// import LoadedContainer from "@/public/images/basic/loaded-container-cargo-ship-is-seen-front-as-it-speeds-ocean-generative-ai-1300x1097.jpg";
 
 const ContentStyled = styled("div")`
    p {
@@ -36,15 +36,15 @@ const ImageStyled = styled.img`
 `;
 const slides = [
    {
-      image: "/images/slider/self-driving-futuristic-freight-truck-deliver-goods-warehouse-city-highway-1000x1000.jpg",
+      image: "/images/about/m1.jpg",
       alt: "Slide 1",
    },
    {
-      image: "/images/slider/cargo-ship-carrying-containers-export-import-is-shown-global-world-service-freight-1000x1000.jpg",
+      image:  "/images/about/m2.jpg",
       alt: "Slide 2",
    },
    {
-      image: "/images/slider/aerial-view-top-view-cargo-plane-flying-ship-port-export-import-logistics-international-goods-ai-generation-1000x1000.jpg",
+      image:  "/images/about/m3.jpg",
       alt: "Slide 3",
    },
    // Thêm các slide khác nếu cần
@@ -52,22 +52,26 @@ const slides = [
 
 const aboutContent = [
    {
-      title: "Vision",
+      title: "Chuyên môn",
       content:
-         "Hai Sam aims to become the leading provider of logistics services in Vietnam and the region, continuously innovating and developing to meet the increasing demands of the market.",
+         "Mình có kiến thức về lập trình Frontend. Với mong muốn có thể tạo ra các trang web đẹp đẽ và thân thiện với người dùng.\
+         Các công nghệ mà mình sử dụng để lập có thể kể đến như là: ReactJS, NextJS, MUI,  Bootstrap, TailwindCSS. Điểm mạnh của bản thân là mình không ngừng học hỏi \
+         Học để phát triển bản thân và mình có thể tạo ra các trang web đẹp hơn và thu hút người dùng hơn",
    },
    {
-      title: "Mission",
+      title: "Kỹ năng",
       content:
-         "Hai Sam always puts customers' interests first, ensuring satisfaction and trust through high-quality services. We deliver high-quality, efficient, and reliable logistics solutions to our customers. We aim to contribute to the sustainable development of businesses, the community, and the economy.",
+         "Ngoài các kiến thức về Frontend. Mình cũng có nền tảng cơ bản kiến thức của backend. Đã từng sử dụng qua các Framework như Laravel, CodeIgniter, Flask\
+         Ngoài ra, mình có các kỹ năng làm việc nhóm và kỹ năng giao tiếp",
    },
 ];
 
 const valuesContent = [
-   "Always prioritize service quality, ensuring our logistics solutions meet the highest standards and bring satisfaction to our customers. With a strong transportation fleet, we aim to build a cost-effective and fast transportation system.",
-   "Continuously seek and apply advanced technologies and modern processes to improve efficiency and service quality.",
-   "Build trust with customers and partners through transparency, honesty, and timely commitment in all activities.",
-   "Develop a highly qualified and deeply knowledgeable workforce, maintaining a dedicated and attentive service attitude.",
+   "Frontend: HTML, CSS, Javascript.",
+   "Backend: PHP, Python",
+   "Framework: NextJS, CodeIgniter",
+   "Library: Bootstrap, MUI, TailwindCSS",
+   "Ngôn ngữ: Các kỹ năng Tiếng Anh cơ bản",
 ];
 
 const removeAOSAttribute = (ref: React.MutableRefObject<any>, timeout: number) => {
@@ -140,7 +144,7 @@ const About = () => {
                marginTop: "-51px",
                width: "100%",
                minHeight: "545px",
-               backgroundImage: `url(${ShipFlying.src})`,
+               backgroundImage: `url(${Trees.src})`,
                backgroundPosition: "center center",
                backgroundRepeat: "no-repeat",
                backgroundSize: "cover",
@@ -170,7 +174,7 @@ const About = () => {
                               },
                            }}
                         >
-                           <SplittingText>{t("about_HS")}</SplittingText>
+                           <SplittingText>{t("Bản thân")}</SplittingText>
                         </MUITypography>
                         <Divider sx={{ mb: "20px" }} />
                         <MUIBox data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000" data-aos-once="true">
@@ -181,7 +185,7 @@ const About = () => {
                                  color: `${style.TEXT_COLOR_TITLE} !important`,
                               }}
                            >
-                              {t("Vision")}, {t("Mission")}, {t("Core values")}
+                              {t("Đại học")}, {t("Kỹ năng")}
                            </MUITypography>
                         </MUIBox>
                      </MUIBox>
@@ -211,7 +215,10 @@ const About = () => {
                      textAlign: "justify",
                   }}
                >
-                  {t("about_des")}
+                  {t("Mình hiện đang là sinh viên năm cuối của Trường Đại học Tôn Đức Thắng. \
+                     Mình thuộc khoa Công nghệ thông tin và chuyên ngành là Khoa học máy tính. \
+                     Trải qua 4 năm gắn bó với ngôi trường đã cho mình nhiều kỷ niệm vui buồn khác nhau. Song, những trải ngiệm ấy cũng mang lại nhiều bài học cho bản thân"
+                     )}
                </MUITypography>
                <MUIGrid container>
                   <MUIGrid item lg={6} md={6} id="container-1">
@@ -220,7 +227,7 @@ const About = () => {
                         data-aos-delay="300"
                         data-aos-duration="2000"
                         data-aos-once="true"
-                        src={CargoShip.src}
+                        src={DairyCow.src}
                         alt=""
                         ref={refImage1}
                      />
@@ -273,7 +280,7 @@ const About = () => {
                      fontSize: { xs: "18px", md: "20px", lg: "32px" },
                   }}
                >
-                  {t("Core values")}
+                  {t("Chi tiết")}
                </MUITypography>
                <MUIGrid container>
                   <MUIGrid
@@ -311,15 +318,16 @@ const About = () => {
                         data-aos-delay="300"
                         data-aos-duration="2000"
                         data-aos-once="true"
-                        src={Truck.src}
+                        src={Frontend.src}
                         alt=""
                         ref={refImage2}
                      />
                   </MUIGrid>
                </MUIGrid>
             </MUIBox>
-            <StaffContent />
-            <ContactContent bgImage={LoadedContainer} />
+            {/* <StaffContent /> */}
+            <MUIBox sx={{m:"20px"}} />
+            {/* <ContactContent bgImage={LoadedContainer} /> */}
             <SubFooter />
          </ContentStyled>
       </>

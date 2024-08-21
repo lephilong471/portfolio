@@ -41,23 +41,23 @@ export const BREAK_POINT = {
 
 export const headerData = [
    {
-      name: "Home",
+      name: "Trang chủ",
       link: PATH.HOME,
    },
    {
-      name: "About",
+      name: "Giới thiệu",
       link: PATH.ABOUT,
    },
    {
-      name: "Services",
+      name: "Sở thích",
       link: PATH.SERVICE,
    },
-   {
-      name: "News",
-      link: PATH.NEWS,
-   },
-   {
-      name: "Contact",
-      link: PATH.CONTACT,
-   },
+   // {
+   //    name: "News",
+   //    link: PATH.NEWS,
+   // },
+   // {
+   //    name: "Contact",
+   //    link: PATH.CONTACT,
+   // },
 ];

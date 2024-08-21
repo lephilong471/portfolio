@@ -21,26 +21,13 @@ import "aos/dist/aos.css";
 
 import Header from "@/Layouts/Header";
 import Footer from "@/Layouts/Footer";
-import MetaImage from "@/public/images/basic/meta.jpg";
+// import MetaImage from "@/public/images/basic/meta.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-   title: "Hải Sâm Logistics",
-   description: "Công ty TNHH Logistics Hải Sâm",
-   metadataBase: new URL('https://haisamlogistics.com/'),
-   openGraph: {
-      title: "Hải Sâm Logistics",
-      description: "Công ty TNHH Logistics Hải Sâm",
-      images: [
-         {
-            url: MetaImage.src,
-            width: 800,
-            height: 600,
-            alt: "Hình nền",
-         },
-      ],
-   },
+   title: "Portfolio Website",
+   description: "Đôi nét về bản thân mình",
 };
 
 export default function RootLayout({
