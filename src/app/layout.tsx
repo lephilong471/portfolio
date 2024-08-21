@@ -21,7 +21,7 @@ import "aos/dist/aos.css";
 
 import Header from "@/Layouts/Header";
 import Footer from "@/Layouts/Footer";
-import MetaImage from "@/public/images/basic/meta.jpg";
+// import MetaImage from "@/public/images/basic/meta.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
