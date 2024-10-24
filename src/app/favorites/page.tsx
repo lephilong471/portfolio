@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { MUIBox, MUIListItemText, MUICollapse, MUIList, MUIGrid, MUITypography} from "@/components/MUI";
+import { MUIBox, MUIListItemText, MUICollapse, MUIList, MUIGrid, MUITypography } from "@/components/MUI";
 
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
@@ -140,7 +140,12 @@ const Service = () => {
          {
             title: "Xem phim",
             content:
-               "Mình rất thích xem phim đặc biệt là phim điện ảnh. Bởi vì các bộ phim đó sử dụng các kỹ xảo rất đẹp mắt và mình bị mê hoặc theo từng thước phim trong đó",
+               "Mình rất thích xem phim đặc biệt là phim điện ảnh. Bởi vì các bộ phim đó sử dụng các kỹ xảo rất đẹp mắt và mình bị mê hoặc theo từng thước phim trong đó.",
+         },
+         {
+            title: "Chỉnh sửa video",
+            content:
+               "Đôi lúc mình đi chơi và có quay lại các đoạn video ngắn. Và mình thường ghép lại để tạo ra một video hoàn chỉnh để lưu giữ kỉ niệm cho bản thân",
          },
          // {
          //    title: "Entrusted Import Service",

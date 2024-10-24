@@ -17,7 +17,7 @@ import SubFooter from "@/Layouts/SubFooter";
 // import StaffContent from "@/components/Home/Content/StaffContent";
 
 import DairyCow from "@/public/images/about/dairy-cow.jpg";
-import Frontend from "@/public/images/about/frontend.jpg";
+import Guitar from "@/public/images/about/guitar.jpg";
 import { useTranslation } from "react-i18next";
 import useIntersectionObserver from "@/config/hooks/useIntersectionObserver";
 // import ContactContent from "@/components/Home/Content/ContactContent";
@@ -58,20 +58,27 @@ const aboutContent = [
          Các công nghệ mà mình sử dụng để lập có thể kể đến như là: ReactJS, NextJS, MUI,  Bootstrap, TailwindCSS. Điểm mạnh của bản thân là mình không ngừng học hỏi \
          Học để phát triển bản thân và mình có thể tạo ra các trang web đẹp hơn và thu hút người dùng hơn",
    },
-   {
-      title: "Kỹ năng",
-      content:
-         "Ngoài các kiến thức về Frontend. Mình cũng có nền tảng cơ bản kiến thức của backend. Đã từng sử dụng qua các Framework như Laravel, CodeIgniter, Flask\
-         Ngoài ra, mình có các kỹ năng làm việc nhóm và kỹ năng giao tiếp",
-   },
+   // {
+   //    title: "Kỹ năng",
+   //    content:
+   //       "Ngoài các kiến thức về Frontend. Mình cũng có nền tảng cơ bản kiến thức của backend. Đã từng sử dụng qua các Framework như Laravel, CodeIgniter, Flask\
+   //       Ngoài ra, mình có các kỹ năng làm việc nhóm và kỹ năng giao tiếp",
+   // },
 ];
 
+// const valuesContent = [
+//    "Frontend: HTML, CSS, Javascript.",
+//    "Backend: PHP, Python",
+//    "Framework: NextJS, CodeIgniter",
+//    "Library: Bootstrap, MUI, TailwindCSS",
+//    "Ngôn ngữ: Các kỹ năng Tiếng Anh cơ bản",
+// ];
+
 const valuesContent = [
-   "Frontend: HTML, CSS, Javascript.",
-   "Backend: PHP, Python",
-   "Framework: NextJS, CodeIgniter",
-   "Library: Bootstrap, MUI, TailwindCSS",
-   "Ngôn ngữ: Các kỹ năng Tiếng Anh cơ bản",
+   "Kỹ năng làm việc nhóm",
+   "Kỹ năng giao tiếp và thuyết trình",
+   "Kỹ năng cắt ghép và chỉnh sửa video cơ bản",
+   "Có tinh thần học hỏi và trách nhiệm cao"
 ];
 
 const removeAOSAttribute = (ref: React.MutableRefObject<any>, timeout: number) => {
@@ -280,7 +287,7 @@ const About = () => {
                      fontSize: { xs: "18px", md: "20px", lg: "32px" },
                   }}
                >
-                  {t("Chi tiết")}
+                  {t("Kỹ năng")}
                </MUITypography>
                <MUIGrid container>
                   <MUIGrid
@@ -318,7 +325,7 @@ const About = () => {
                         data-aos-delay="300"
                         data-aos-duration="2000"
                         data-aos-once="true"
-                        src={Frontend.src}
+                        src={Guitar.src}
                         alt=""
                         ref={refImage2}
                      />
